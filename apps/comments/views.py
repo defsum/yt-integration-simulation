@@ -23,8 +23,8 @@ class CommentViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.AllowAny]
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
     search_fields = ['content', 'author_name']
-    filterset_fields = ['video', 'author_name', 'sentiment_label', 'is_ai_generated', 'is_approved']
-    ordering_fields = ['created_at', 'like_count', 'reply_count']
+    filterset_fields = ['video', 'author_name', 'is_ai_generated', 'is_approved']
+    ordering_fields = ['created_at', 'like_count']
     ordering = ['-created_at']
 
     def get_queryset(self):
