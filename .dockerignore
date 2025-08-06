@@ -1,0 +1,10 @@
+.git
+__pycache__
+*.pyc
+venv/
+db.sqlite3
+staticfiles/
+.vscode
+.idea
+.DS_Store
+README.md
